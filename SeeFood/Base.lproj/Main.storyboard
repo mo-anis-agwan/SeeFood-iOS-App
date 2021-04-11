@@ -32,7 +32,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="G1L-Em-eWl">
                         <barButtonItem key="rightBarButtonItem" image="camera.fill" catalog="system" id="wg8-5y-IaI">
-                            <color key="tintColor" systemColor="systemPinkColor"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" id="4QN-Py-a15"/>
                             </connections>
@@ -54,6 +54,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YwL-X1-efD">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemPinkColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
