@@ -32,6 +32,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="G1L-Em-eWl">
                         <barButtonItem key="rightBarButtonItem" image="camera.fill" catalog="system" id="wg8-5y-IaI">
+                            <color key="tintColor" systemColor="systemPinkColor"/>
                             <connections>
                                 <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" id="4QN-Py-a15"/>
                             </connections>
@@ -68,6 +69,9 @@
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -22,14 +22,35 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         imagePicker.delegate = self
+        imagePicker.sourceType = .camera
+        imagePicker.allowsEditing = false
         
     }
     
     
     //MARK: - IBACtions
     @IBAction func cameraButtonTapped(_ sender: UIBarButtonItem) {
+        self.present(imagePicker, animated: true, completion: nil)
     }
     
 
+    //MARK: - ImagePicker Delegates
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            imageView.image = userPickedImage
+            
+            let ciImage = CIImage(image: userPickedImage)
+            
+            
+            
+        }
+        
+        imagePicker.dismiss(animated: true, completion: nil)
+        
+    }
+
+    
+    
 }
 
